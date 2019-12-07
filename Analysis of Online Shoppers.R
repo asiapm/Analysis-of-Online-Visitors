@@ -77,10 +77,7 @@ countProductPages3
 countProductPages4<-length(which(data$ProductRelated>="300", data$ProductRelated<"1000"))
 countProductPages4
 
-
 sum(data$ProductRelated, na.rm = TRUE)
-
-#sum of total amount of product pages looked at is 391,204...why need this?
 
 #sum of total amount of visitors is 12,330, as shown here
 
@@ -106,12 +103,9 @@ countVisOther
 
 #Types of TRAFFIC: Direct (shopper typed URL into browser), 
 #referral (shopper clicked on a link from another website), 
-#search (shopper came from search engine), campaign (shopper came from campaign),
-#among different branches of said traffic
+#search (shopper came from search engine), campaign (shopper came from campaign), and there are more different branches of said traffic
 
-
-#The less pages customers looked at, the more likely they were to buy
-#something. Most who viewed product related pages bought purchased a product 
+#The less pages customers looked at, the more likely they were to buy a product. Most who viewed product related pages purchased a product 
 #this graph shows relationship with revenue
 ggplot(data = data, aes(x=data$ProductRelated, y=data$VisitorType, 
                         colour=data$VisitorType, 
