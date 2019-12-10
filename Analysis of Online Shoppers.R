@@ -11,7 +11,7 @@ print(data$Region)
 
 print(data$Revenue)
 
-#most shoppers did not spurchase items while visiting this site, as shown here
+#most shoppers did not purchase items while visiting this site, as shown here
 
 countTrueRev<-length(which(data$Revenue=="TRUE"))
 countTrueRev
